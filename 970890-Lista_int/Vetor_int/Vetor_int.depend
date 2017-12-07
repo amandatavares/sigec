@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1510606019 source:c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 36 - 13-11-2017\vetor_int\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"lis_int.h"
+
+1510606098 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 36 - 13-11-2017\vetor_int\lis_int.h
+
+1510934812 source:c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 37 - 14-11-2017\vetor_int\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"lis_int.h"
+
+1510934884 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 37 - 14-11-2017\vetor_int\lis_int.h
+
+1510679474 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 37 - 14-11-2017\vetor_int\lis_int_din.h
+

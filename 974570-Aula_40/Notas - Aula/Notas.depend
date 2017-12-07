@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1510676885 source:c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 36 - 13-11-2017\notas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"data.h"
+
+1510676991 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 36 - 13-11-2017\notas\data.h
+	<time.h>
+
+1510676885 source:c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 38 - 17-11-2017\notas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"data.h"
+
+1510676991 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 38 - 17-11-2017\notas\data.h
+	<time.h>
+
+1510942400 source:c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 38 - 17-11-2017\notas - aula\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"data.h"
+	"aluno.h"
+	"lista_aluno.h"
+
+1510934010 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 38 - 17-11-2017\notas - aula\data.h
+	<time.h>
+
+1510940853 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 38 - 17-11-2017\notas - aula\aluno.h
+	<math.h>
+
+1510942449 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 38 - 17-11-2017\notas - aula\lista_aluno.h
+
+1511209343 source:c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 39 - 20-11-2017\notas - aula\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"data.h"
+	"aluno.h"
+	"lista_aluno.h"
+
+1511257428 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 39 - 20-11-2017\notas - aula\data.h
+	<time.h>
+
+1511207637 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 39 - 20-11-2017\notas - aula\aluno.h
+	<math.h>
+
+1511200119 c:\users\ricar\dropbox\ifce 2017-ii\introdução à programação\aula 39 - 20-11-2017\notas - aula\lista_aluno.h
+

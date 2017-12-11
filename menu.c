@@ -41,12 +41,7 @@ char menu_relatorio()
 int main()
 {
     srand(time(NULL));
-    TLisAlu la;
-    TAluno alu;
-    char op, op2;
-    gere_lis_alu(&la, 20);
-    mostre_lis_alu(&la);
-    unsigned pro_cod = 21;
+
 
     while(1) {
         printf("**********************************************************\n");

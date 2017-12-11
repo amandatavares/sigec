@@ -9,6 +9,7 @@
 int main()
 {
 
-    cadastrar();
+    // cadastrar();
+    lista_por_cod();
     return 0;
 }

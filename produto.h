@@ -39,4 +39,31 @@ void cadastrar(){
   return;
 }
 
+void lista_por_cod(){
+  FILE *fp;
+  int lines = 0;
+  char ch[70];
+
+  if((fp = fopen("produtos.txt", "r")) == NULL) /* Abre arquivo binário para escrita */
+  {
+    printf("Erro na abertura do arquivo");
+    exit(1);
+  }
+  printf("----------------------------------------------------------\n");
+  printf("| Codigo | Descricao | Quantidade | Validade | Preco ");
+  printf("----------------------------------------------------------\n");
+  while( fgets (ch, 70, fp)!=NULL ) {
+      /* writing content to stdout */
+      if (lines % 4 == 0) {
+        printf("\n");
+      }
+      else {
+        printf("%s", &ch);
+      }
+      lines++;
+   }
+   // printf("[%d]\n", lines);
+
+}
+
 // item * listar(){}

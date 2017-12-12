@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1512375688 source:c:\users\adr\documents\trabalho controle\controle\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_produtos.h"
+	"lista_compra.h"
+
+1512374528 c:\users\adr\documents\trabalho controle\controle\lista_produtos.h
+	"Item.h"
+
+1512352932 c:\users\adr\documents\trabalho controle\controle\item.h
+	"data.h"
+
+1511257428 c:\users\adr\documents\trabalho controle\controle\data.h
+	<time.h>
+
+1512370288 c:\users\adr\documents\trabalho controle\controle\lista_compra.h
+	"Compra_Item.h"
+
+1512358523 c:\users\adr\documents\trabalho controle\controle\compra_item.h
+

@@ -51,14 +51,13 @@ void lista_por_cod(){
   }
   printf("----------------------------------------------------------\n");
   printf("| Codigo | Descricao | Quantidade | Validade | Preco ");
-  printf("----------------------------------------------------------\n");
-  while( fgets (ch, 70, fp)!=NULL ) {
-      /* writing content to stdout */
-      if (lines % 4 == 0) {
+  printf("\n----------------------------------------------------------\n");
+  while( fgets (ch, 70, fp) != NULL ) {
+      if (lines != 0 && lines % 5 == 0) {
         printf("\n");
       }
       else {
-        printf("%s", &ch);
+        printf("%-12s", strtok(ch,"\n"));
       }
       lines++;
    }

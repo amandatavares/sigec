@@ -133,6 +133,3 @@ void dia_sem_ext(TData dat)
     char dse[7][16] = {"domingo","segunda-feira","ter\x87 \ba-feira","quarta-feira","quinta-feira","sexta-feira","s\xa0 \bbado"};
     printf("%s", dse[dia_semana(dat)]);
 }
-
-
-

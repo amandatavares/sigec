@@ -70,7 +70,7 @@ void mostra_compras_entre_data(TListComp listC, TData data1, TData data2)
 
 
     }
-        if(res3==0) printf("NENHUMA COMPRA FEITA NESSE PERÍODO\n");
+        if(res3==0) printf("NENHUMA COMPRA FEITA NESSE PERï¿½ODO\n");
 
 }
 
@@ -117,4 +117,3 @@ void mostra_compras(TListComp *lisC)
                lisC->item_compra[j].data.dia,lisC->item_compra[j].data.mes, lisC->item_compra[j].data.ano,179);
             }
 }
-

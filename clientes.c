@@ -71,7 +71,7 @@ void exibe_dados(Dados *dados) {
                 fprintf(stdout, "------------------------\n ");
         }
         printf("Pressione uma tecla para continuar.");
-        getch();
+        getchar();
 }
 
 /* Percorre cada ponta comparando o nome com a chave. */
@@ -97,7 +97,7 @@ void busca_dados(Dados *dados, char *chave) {
                 fprintf(stdout, "Foram encontrados %d registros. \nPressione uma tecla para continuar.\n", achou);
 
         sleep(1);
-        getch();
+        getchar();
 }
 
 /* Deleta o ultimo registro inserido. */
@@ -168,7 +168,7 @@ void busca(void) {
                 scanf("%s", chave);
 
                 busca_dados(principal, chave);
-                getch();
+                getchar();
         }
 }
 
@@ -183,7 +183,7 @@ int main(void) {
         char escolha;
 
         do {
-                system("cls");
+                // system("clear");
                 fprintf(stdout, "\n Cadastro de Pessoas\n\n");
                 fprintf(stdout, "Escolha uma opcao: \n\n");
                 fprintf(stdout, "1 - Insere Dados\n");
@@ -221,7 +221,7 @@ int main(void) {
                                 break;
                 }
 
-                //getchar(); /* E para impedir sujeira na entrada da escolha. Nao lembro de nada melhor tambem.   */
+                //getcharar(); /* E para impedir sujeira na entrada da escolha. Nao lembro de nada melhor tambem.   */
         }
 
         while (escolha > 0); /* Loop Principal. */

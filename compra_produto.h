@@ -35,7 +35,7 @@ void insere_prod_compra(TLdc *ldC, TLisProd *lisP, TLisProd lisP2)
 
         printf("Digite o c%cdigo do produto:\n",224);
         scanf("%u", &cod_comp);
-        insere_item(lisP);
+        insere_prod(lisP);
         printf("Digite o pre%co total da compra:\n",128);
         scanf("%f", &preco_compra);
         printf("Digite a quantidade:\n");

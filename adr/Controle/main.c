@@ -17,7 +17,7 @@ char menu_principal()
     printf("  6 - COMPRAR PRODUTO\n");
     printf("  0 - SAIR DO APLICATIVO\n\n");
     printf("  ESCOLHA UMA OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 char menu_listagem()
@@ -33,7 +33,7 @@ char menu_listagem()
 //    printf("  7 - MOSTRAR PRODUTOS FORA DO PRAZO\n");
     printf("  |0 - VOLTAR PARA O MENU PRINCIPAL|\n");
     printf("  ESCOLHA UMA OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 char menu_Compra()
@@ -45,7 +45,7 @@ char menu_Compra()
     printf("3 - MOSTRAR COMPRAS ENTRE DUAS DATAS");
     printf(" 0 - VOLTAR PARA O MENU PRINCIPAL\n");
     printf("  ESCOLHA UMA OP%c%cO:\n\n ",128,199);
-    return getche();
+    return getchar();
 }
 
 

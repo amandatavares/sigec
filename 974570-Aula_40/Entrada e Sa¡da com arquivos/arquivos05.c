@@ -13,5 +13,5 @@ main()
       }
       fclose(fp);
       rewind(fp);
-      getchar();
+      getcharar();
 }

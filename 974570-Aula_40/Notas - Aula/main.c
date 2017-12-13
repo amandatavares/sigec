@@ -14,7 +14,7 @@ char menu_principal()
     printf("  3 - Buscar pelo nome\n");
     printf("  0 - Sair do aplicativo\n\n");
     printf("  ESCOLHA UM OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 char menu_listagem()
@@ -25,7 +25,7 @@ char menu_listagem()
     printf("  4 - Ordenados pela m%cdia\n",130);
     printf("  0 - Voltar ao menu principal\n\n");
     printf("  ESCOLHA UM OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 

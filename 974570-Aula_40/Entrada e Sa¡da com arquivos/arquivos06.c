@@ -27,5 +27,5 @@ main()
    }
 
    fclose(fp);
-   getchar();
+   getcharar();
 }

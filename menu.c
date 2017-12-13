@@ -11,7 +11,7 @@ char menu_principal()
     printf("  4 - Relatórios\n");
     printf("  0 - Sair do aplicativo\n\n");
     printf("  ESCOLHA UM OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 char menu_listagem()
@@ -22,7 +22,7 @@ char menu_listagem()
     printf("  4 - Produtos com baixo estoque\n");
     printf("  0 - Voltar ao menu principal\n\n");
     printf("  ESCOLHA UM OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 char menu_relatorio()
@@ -33,7 +33,7 @@ char menu_relatorio()
     printf("  4 - Produtos vencidos\n",130);
     printf("  0 - Voltar ao menu principal\n\n");
     printf("  ESCOLHA UM OP%c%cO: ",128,199);
-    return getche();
+    return getchar();
 }
 
 int main()
@@ -60,7 +60,7 @@ int main()
         printf("\n");
         if(op == '0')
             break;
-            system("cls");
+            // system("clear");
         switch(op)
        {
            case '1':
@@ -70,7 +70,7 @@ int main()
                     op2 = menu_listagem();
                     if(op2 == '0')
                         break;
-                        system("cls");
+                        // system("cls");
 
 
                      switch(op2)
@@ -118,7 +118,7 @@ int main()
             case '3':
                 break;
             case '5':
-                system("cls");
+                // system("cls");
                 mostra_prod_pouca_quantidade(&list);
 
                 break;
@@ -130,7 +130,7 @@ int main()
                     {
 
                         op3= menu_Compra();
-                        system("cls");
+                        // system("cls");
                         if(op3 == '0')
                         {
                             break;

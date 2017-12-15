@@ -38,7 +38,6 @@ int comp_preco(const void *a, const void *b)
     TItem *ab = (TItem *) b;
     return aa->preco_venda - ab->preco_venda;
 }
-
 // void cadastrar(){
 //   TItem i;
 //   printf("Codigo:    ");

@@ -59,16 +59,16 @@ void mostra_prod_acabando(TLisProd *lis)
 {
     int i,j;
 
-    printf("%2c %s %c   %s %12c %s %c %6s %c %10s %2c\n",179 ,"Cod",179 ,"Produto",179 ,"Quantidade",179 ,"Valor", 179 ,"Validade",179);
+    printf("%2s %s %s   %s %12s %s %s %6s %s %10s %2s\n","\u05C0" ,"Cod","\u05C0" ,"Produto","\u05C0" ,"Quantidade","\u05C0" ,"Valor", "\u05C0" ,"Validade","\u05C0");
 
     for (j=0;j<lis->ni;j++)
         {
             if(lis->itens[j].qtd <15)
             {
-               printf("%2c %3.03d %c %-20s %c %8u %3c %.2f %3c %3.02d/%02d/%04d%2c\n",179, lis->itens[j].cod,179,
-               lis->itens[j].desc,179, lis->itens[j].qtd,179, lis->itens[j].preco_venda,179,
-               lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,179);
-               printf("%2c",195);
+               printf("%2s %3.03d %s %-20s %s %8u %3c %.2f %3c %3.02d/%02d/%04d%2s\n","\u05C0", lis->itens[j].cod,"\u05C0",
+               lis->itens[j].desc,"\u05C0", lis->itens[j].qtd,"\u05C0", lis->itens[j].preco_venda,"\u05C0",
+               lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,"\u05C0");
+               printf("%2s",195);
 
 
 
@@ -83,21 +83,20 @@ void mostre_lista_prods(TLisProd *lis)
 
 
 
-    printf("%2c %s %c   %s %12c %s %c %6s %c %10s %2c\n",179 ,"Cod",179 ,"Produto",179 ,"Quantidade",179 ,"Valor", 179 ,"Validade",179);
-
+    printf("%2s %s %s  %s %15s %s %s %6s %s %10s %2s\n","\u05C0" ,"Cod","\u05C0" ,"Produto","\u05C0" ,"Quantidade","\u05C0" ,"Valor", "\u05C0" ,"Validade","\u05C0");
 
 
     for(j=0; j<lis->ni; j++)
     {
-        printf("%2c %3.03d %c %-20s %c %8u %3c %.2f %3c %3.02d/%02d/%04d%2c\n",179, lis->itens[j].cod,179,
-               lis->itens[j].desc,179, lis->itens[j].qtd,179, lis->itens[j].preco_venda,179,
-               lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,179);
+        printf("%2s %3.03d %s %-20s %s %8u %5s %.2f %5s %3.02d/%02d/%04d %2s\n","\u05C0", lis->itens[j].cod,"\u05C0",
+               lis->itens[j].desc,"\u05C0", lis->itens[j].qtd,"\u05C0", lis->itens[j].preco_venda,"\u05C0",
+               lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,"\u05C0");
 
 
     }
-    printf("%2c %3.03d %c %-20s %c %8u %3c %4.2f %4c %4.02d/%02d/%03d%c\n",179, lis->itens[lis->ni].cod,179,
-               lis->itens[lis->ni].desc,179, lis->itens[lis->ni].qtd,179, lis->itens[lis->ni].preco_venda,179,
-               lis->itens[lis->ni].valido.dia,lis->itens[lis->ni].valido.mes, lis->itens[lis->ni].valido.ano,179);
+    printf("%2s %3.03d %s %-20s %s %8u %3c %4.2f %4c %4.02d/%02d/%03d%s\n","\u05C0", lis->itens[lis->ni].cod,"\u05C0",
+               lis->itens[lis->ni].desc,"\u05C0", lis->itens[lis->ni].qtd,"\u05C0", lis->itens[lis->ni].preco_venda,"\u05C0",
+               lis->itens[lis->ni].valido.dia,lis->itens[lis->ni].valido.mes, lis->itens[lis->ni].valido.ano,"\u05C0");
 
 }
 
@@ -107,21 +106,42 @@ void mostra_produtos_vencendo(TLisProd *lis)
     int res; //variável que receberá o resultado da comparação entre as datas
     TData dt = dat_sis();
     int i,j;
-    printf("  ----------------Produtos próximos ao vencimento!-------------------\n");
+    // printf("  ----------------Produtos próximos ao vencimento!-------------------\n");
 
-    printf("%2c %s %c   %s %12c %s %c %6s %c %10s %2c\n",179 ,"Cod",179 ,"Produto",179 ,"Quantidade",179 ,"Valor", 179 ,"Validade",179);
-    for(j<0;j<lis->ni+1;j++)
-    {
-       res = cmp_data( &lis->itens[j].valido,&dt);
-       if(res >4 && res<15)
-        {
+    printf("%2s %s %s   %s %12s %s %s %6s %s %10s %2s\n","\u05C0" ,"Cod","\u05C0" ,"Produto","\u05C0" ,"Quantidade","\u05C0" ,"Valor", "\u05C0" ,"Validade","\u05C0");
+    for(j<0;j<lis->ni+1;j++) {
+       res = cmp_data(&lis->itens[j].valido,&dt);
+       if(res>0 && res<15) {
 
-                   printf("%2c %3.03d %c %-20s %c %8u %3c %.2f %3c %3.02d/%02d/%04d%2c\n",179, lis->itens[j].cod,179,
-                   lis->itens[j].desc,179, lis->itens[j].qtd,179, lis->itens[j].preco_venda,179,
-                   lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,179);
+           printf("%2s %3.03d %s %-20s %s %8u %3c %.2f %3c %3.02d/%02d/%04d%2s\n","\u05C0", lis->itens[j].cod,"\u05C0",
+           lis->itens[j].desc,"\u05C0", lis->itens[j].qtd,"\u05C0", lis->itens[j].preco_venda,"\u05C0",
+           lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,"\u05C0");
 
         }
-
-
+        else {
+          printf("Nao ha mais produtos proximos ao vencimento\n");
+          break;
+        }
     }
+}
+void mostra_produtos_vencidos(TLisProd *lis) {
+  int res; //variável que receberá o resultado da comparação entre as datas
+  TData dt = dat_sis();
+  int i,j;
+  // printf("  ----------------Produtos vencidos!-------------------\n");
+
+  printf("%2s %s %s   %s %12s %s %s %6s %s %10s %2s\n","\u05C0" ,"Cod","\u05C0" ,"Produto","\u05C0" ,"Quantidade","\u05C0" ,"Valor", "\u05C0" ,"Validade","\u05C0");
+  for(j<0;j<lis->ni+1;j++) {
+     res = cmp_data( &lis->itens[j].valido,&dt);
+     if(res < 0) {
+
+         printf("%2s %3.03d %s %-20s %s %8u %3c %.2f %3c %3.02d/%02d/%04d%2s\n","\u05C0", lis->itens[j].cod,"\u05C0",
+         lis->itens[j].desc,"\u05C0", lis->itens[j].qtd,"\u05C0", lis->itens[j].preco_venda,"\u05C0",
+         lis->itens[j].valido.dia,lis->itens[j].valido.mes, lis->itens[j].valido.ano,"\u05C0");
+      }
+    else {
+      printf("\nNão há produtos vencidos!\n");
+      break;
+    }
+  }
 }

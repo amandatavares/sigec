@@ -25,6 +25,7 @@ TLdc seed_compra()
   return ldC;
 }
 
+// comprar produtos do fornecedor
 void insere_prod_compra(TLdc *ldC, TLisProd *lisP, TLisProd lisP2)
 {
     unsigned cod_comp;
@@ -33,9 +34,9 @@ void insere_prod_compra(TLdc *ldC, TLisProd *lisP, TLisProd lisP2)
     int res;
     TData resdata;
 
+        insere_prod(lisP);
         printf("Digite o c%cdigo do produto:\n",224);
         scanf("%u", &cod_comp);
-        insere_prod(lisP);
         printf("Digite o pre%co total da compra:\n",128);
         scanf("%f", &preco_compra);
         printf("Digite a quantidade:\n");
@@ -79,6 +80,7 @@ void compras_entre_datas(TLdc listC, TData data1, TData data2)
 void mostra_compras(TLdc *ldC)
 {
     int i,j;
+    float gastos=0.0;
 
     printf("%2c",218);
     for (i=0;i<5;i++)
@@ -112,10 +114,9 @@ void mostra_compras(TLdc *ldC)
     printf("%c\n", 180);
 
 
-    for(j=0;j<ldC->ncomp;j++)
-            {
-               printf("%2c %3.03d %c %8u %3c %.2f %3c %3.02d/%02d/%04d%2c\n",179, ldC->prod_compra[j].cod_item
-                      ,179, ldC->prod_compra[j].quantidade,179, ldC->prod_compra[j].preco_compra_total,179,
-               ldC->prod_compra[j].data.dia,ldC->prod_compra[j].data.mes, ldC->prod_compra[j].data.ano,179);
-            }
+    for(j=0;j<ldC->ncomp;j++) {
+         printf("%2c %3.03d %c %8u %3c %.2f %3c %3.02d/%02d/%04d%2c\n",179, ldC->prod_compra[j].cod_item ,179, ldC->prod_compra[j].quantidade,179, ldC->prod_compra[j].preco_compra_total,179,      ldC->prod_compra[j].data.dia,ldC->prod_compra[j].data.mes, ldC->prod_compra[j].data.ano,179);
+         gastos = gastos + ldC->prod_compra[j].preco_compra_total;
+    }
+    printf("GASTO TOTAL = R$ %.2f\n", gastos);
 }

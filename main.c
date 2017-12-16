@@ -11,7 +11,7 @@
 
 char menu_principal()
 {
-  printf("  1 - Vender produto\n");
+  // printf("  1 - Vender produto\n");
   printf("  2 - Comprar produto\n");
   printf("  3 - Listar produtos\n");
   printf("  4 - Inserir novo produto\n");
@@ -35,7 +35,7 @@ char menu_listagem()
 char menu_relatorio()
 {
   printf("\n  1 - Compras entre duas datas\n");
-  printf("  2 - Vendas m\u00eas\n");
+  // printf("  2 - Vendas m\u00eas\n");
   printf("  3 - Gastos m\u00eas\n");
   printf("  4 - Produtos vencidos\n");
   printf("  0 - Voltar ao menu principal\n\n");
